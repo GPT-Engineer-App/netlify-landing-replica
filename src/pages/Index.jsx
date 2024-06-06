@@ -71,20 +71,27 @@ const Index = () => {
       <Box py={20} bg="gray.50">
         <Container maxW="container.xl">
           <Heading as="h2" size="xl" mb={8} textAlign="center">Netlify Composable Web Platform</Heading>
+          <Text textAlign="center" mb={8}>Streamlined orchestration, simplified and unified workflows, and real-time updates across infrastructure, workflows, websites and teams — all supported by Enterprise-grade security, services, and a world-class partner ecosystem.</Text>
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
             <Box bg="white" p={6} boxShadow="md" borderRadius="md">
               <Heading as="h3" size="md" mb={4}>Deploy faster</Heading>
               <Text>Netlify Core is a frontend cloud solution for developers to build and deploy future-proof digital solutions with modern, composable tooling that works with all modern frameworks.</Text>
+              <Button variant="link" colorScheme="teal" mt={4}>Learn more about Core</Button>
             </Box>
             <Box bg="white" p={6} boxShadow="md" borderRadius="md">
               <Heading as="h3" size="md" mb={4}>Unify all content</Heading>
               <Text>Netlify Connect is a data unification layer that gives web teams the freedom to create world-class websites, online stores, and applications with data from any existing or new content source.</Text>
+              <Button variant="link" colorScheme="teal" mt={4}>Learn more about Connect</Button>
             </Box>
             <Box bg="white" p={6} boxShadow="md" borderRadius="md">
               <Heading as="h3" size="md" mb={4}>Click, edit, publish</Heading>
               <Text>Netlify Create gives digital teams the freedom to autonomously perform content and website updates faster than ever before with an intuitive visual editor.</Text>
+              <Button variant="link" colorScheme="teal" mt={4}>Learn more about Create</Button>
             </Box>
           </SimpleGrid>
+          <Box textAlign="center" mt={8}>
+            <Button colorScheme="teal" size="lg">Explore the Platform</Button>
+          </Box>
         </Container>
       </Box>
 
@@ -115,7 +122,7 @@ const Index = () => {
               </HStack>
             </Box>
             <Box bg="gray.900" p={6} borderRadius="md">
-              <Text as="pre" fontSize="sm" whiteSpace="pre-wrap">
+              <Text as="pre" fontSize="sm" whiteSpace="pre-wrap" color="white">
                 {`export function CartMain({layout, cart}) {
   const linesCount = Boolean(cart?.linesCount)
   const withDiscount = cart?.discountCodes?.filter(code => code)
